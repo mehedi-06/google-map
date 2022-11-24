@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>map example</title>
+</head>
+<body>
+    <iframe id="mapFrame" src="https://www.google.com/maps?q=Yliopistonkatu36Lappeenranta&output=embed" width="50%" height="300px" frameborder="0"></iframe><br><br>
+    <label for="street_address">street address:</label>
+    <input type="text" id="address" placeholder="Type street name">
+    <label for="city_name">Type City:</label>
+    <input type="text" id="city_name" placeholder="Type City">
+    <input type="button" value="Search" onclick="load_location()">
+
+
+
+    <script >
+        function load_location(){
+
+        
+
+            var street_address=(document.getElementById("address").value);
+            var city=document.getElementById("city_name").value;
+            var url=document.getElementById("mapFrame").src="https://www.google.com/maps?q="+street_address+city+"&output=embed";
+           
+        }
+
+
+    </script>
+
+
+</body>
+</html>
